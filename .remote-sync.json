@@ -1,0 +1,21 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": true,
+  "hostname": "192.168.0.18",
+  "port": "22",
+  "target": "/home/matheus/zygobooks",
+  "ignore": [
+    "/tmp/**",
+    "tmp/**",
+    "node_modules/**",
+    "/node_modules/**"
+  ],
+  "username": "matheus",
+  "password": "t6qbkps6",
+  "watch": [],
+  "transport": "scp"
+}
