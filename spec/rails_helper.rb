@@ -30,6 +30,7 @@ rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end
+require 'ffaker'
 RSpec.configure do |config|
   # Requirements and configs
   config.include FactoryBot::Syntax::Methods
