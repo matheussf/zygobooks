@@ -34,6 +34,7 @@ gem 'devise'
 # Css framework
 gem 'bootstrap', '~> 4.5.0'
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -51,6 +52,8 @@ group :development do
 end
 
 group :test do
+  # Simplecov for test coverage
+  gem 'simplecov', require: false
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'

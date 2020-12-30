@@ -31,15 +31,19 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 require 'ffaker'
+require 'simplecov'
 RSpec.configure do |config|
   # Requirements and configs
   config.include FactoryBot::Syntax::Methods
+
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
       with.test_framework :rspec
       with.library :rails
     end
   end
+
+  SimpleCov.start
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
