@@ -6,22 +6,32 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Author</th>
       <th>Description</th>
       <th>Image url</th>
       <th></th>
-      <th></th>
-      <th></th>
+      <% if can? :update, Book %>
+        <th></th>
+      <% end %>
+      <% if can? :destroy, Book %>
+        <th></th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
     <% @books.each do |book| %>
       <tr>
         <td><%= book.title %></td>
+        <td><%= book.author %></td>
         <td><%= book.description %></td>
         <td><%= book.image_url %></td>
         <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if can? :update, Book %>
+          <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <% end %>
+        <% if can? :destroy, Book %>
+          <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -30,7 +40,10 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+
+<% if can? :create, Book %>
+  <%= link_to 'New Book', new_book_path %>
+<% end %>
 
 <script>
 $(document).ready( function () {
