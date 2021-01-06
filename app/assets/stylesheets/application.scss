@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 60px ;
+  background-image: url("https://libreshot.com/wp-content/uploads/2018/02/many-old-books.jpg");
+ }
+
+.submit-button {
+  min-width: 100%;
+}
+
+img.resize-show {
+    width: 450px;
+    height: auto;
+}
+
+img.resize-list {
+    width: 32px;
+    height: auto;
+}
