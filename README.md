@@ -3,8 +3,8 @@
 The setups steps expect following tools installed on the system.
 
 - Github
-- Ruby [2.6.3](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
-- Rails [6.1.0](https://github.com/organization/project-name/blob/master/Gemfile#L7)
+- Ruby [2.6.3](https://github.com/matheussf/zygobooks/blob/main/.ruby-version#L1)
+- Rails [6.1.0](https://github.com/matheussf/zygobooks/blob/main/Gemfile#L7)
 - Nodejs [10.23.0]
 - Yarn [1.22.5]
 
