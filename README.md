@@ -7,6 +7,7 @@ The setups steps expect following tools installed on the system.
 - Rails [6.1.0](https://github.com/matheussf/zygobooks/blob/main/Gemfile#L7)
 - Nodejs [10.23.0]
 - Yarn [1.22.5]
+- PostgreSQL [12.5]
 
 ##### 1. Check out the repository
 
