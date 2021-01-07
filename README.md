@@ -42,3 +42,13 @@ bundle exec rails s
 ```
 
 And now you can visit the site with the URL http://localhost:3000
+
+
+##### User admins (ability to add/update/remove books)
+To login as admin you might follow one of these two steps:
+
+##### 1 - Log in as teste@gmail.com / 123123
+##### 2 - Create normal account and go to rails console change User's Role attribute to 0.
+```ruby
+User.find(1).update_attribute(:role, 0)
+```
