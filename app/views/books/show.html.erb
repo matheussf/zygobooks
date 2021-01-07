@@ -9,7 +9,7 @@
           </div>
           <div class="card-body">
             <h4 class="card-title"><%= @book.title %></h4>
-            <p class="card-text"><%= @book.description %></p>
+            <p class="card-text"><%= simple_format(@book.description) %></p>
           </div>
         </div>
         <div class="card-footer">
